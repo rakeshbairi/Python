@@ -86,5 +86,28 @@ print(ticket_price)
 #Dictionaries store connections between pieces of information. Each item in a dictionary is a key-value pair.
 alien = {'color': 'green', 'points': 5}
 print("The alien's color is " + alien['color'])
-alien['x_position'] = '0'
-print("The alien's color is " + alien['x_position'])
+
+#Adding a new key-value pair
+alien['x_position'] = 0
+print("The alien's color is " + str(alien['x_position']))
+
+#Looping through all key-value pairs
+fav_numbers = {'eric': 17, 'ever': 4}
+for name, number in fav_numbers.items(): 
+  print(name + ' loves ' + str(number))
+
+  #Looping through all keys
+  for number in fav_numbers.values(): 
+    print(str(number) + ' is a favorite')
+
+#USER INPUT Your programs can prompt the user for input. All input is stored as a string.
+name = input("What's your name? ") 
+print("Hello, " + name + "!")
+
+#Prompting for numerical input
+age = input("How old are you? ") 
+age = int(age)
+print("Age:"+str(age))
+pi = input("What's the value of pi? ")
+pi = float(pi)
+print("PI:"+str(pi))
